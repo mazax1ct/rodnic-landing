@@ -1,0 +1,45 @@
+.section-1
+  background-image: url('../images/backgrounds/mobile/bottles_xs.png')
+  background-color: transparent
+  background-position: 50% 100%
+  background-repeat: no-repeat
+  margin-bottom: 50px
+  padding-top: 50px
+  padding-bottom: 200px
+  text-align: center
+
+  @media(min-width: 560px)
+    background-image: url('../images/backgrounds/tablet/bottles_md_1.png')
+    padding-bottom: 350px
+
+  @media(min-width: 768px)
+    background-image: url('../images/backgrounds/tablet/bottles_md_2.png')
+    min-height: 500px
+    padding-bottom: 400px
+
+  @media(min-width: 1200px)
+    background-image: url('../images/backgrounds/desktop/bottles_lg.png')
+    background-position: 100% 50%
+    min-height: 715px
+    margin-bottom: 0
+    padding-bottom: 0
+    padding-top: 180px
+
+  &__inner
+    @media(min-width: 1200px)
+      padding-right: 585px
+
+    @media(min-width: 1300px)
+      width: 1280px
+
+  h1
+    font-size: 30px
+
+    @media(min-width: 768px)
+      font-size: 40px
+
+  p
+    font-size: 20px
+
+    @media(min-width: 768px)
+      font-size: 30px

@@ -1,0 +1,115 @@
+.section-3
+  padding-bottom: 35px
+  overflow: hidden
+  text-align: center
+
+  @media(min-width: 1200px)
+    font-size: 19px
+
+  @media(min-width: 1300px)
+    font-size: 22px
+
+  h2
+    margin-bottom: 15px
+
+  .container
+    @media(min-width: 1300px)
+      width: 1280px
+
+.ideas
+  margin-top: 30px
+
+  @media(min-width: 768px)
+    margin-top: 55px
+    margin-bottom: 60px
+
+  @media(min-width: 1200px)
+    margin-top: 90px
+
+.idea
+  @media(max-width: 767px)
+    margin-bottom: 15px
+    max-width: 340px
+    margin-left: auto
+    margin-right: auto
+
+  @media(min-width: 768px)
+    display: flex
+
+  &--reverse
+    @media(min-width: 768px)
+      flex-direction: row-reverse
+
+    .idea__image
+      @media(min-width: 768px)
+        text-align: left
+
+    .idea__text-block
+      @media(min-width: 768px)
+        justify-content: flex-end
+
+      @media(min-width: 1200px)
+        padding-left: 50px
+        padding-right: 100px
+
+    .idea__text
+      &::after
+        @media(min-width: 768px)
+          left: auto
+          right: 0
+          transform: rotate(-3.5deg) skew(18deg)
+          transform-origin: 100% bottom
+
+        @media(min-width: 1300px)
+          transform: rotate(-3.5deg) skew(26deg)
+
+  &__image
+    @media(min-width: 768px)
+      margin-bottom: 0
+      text-align: right
+      width: 50%
+
+  &__text-block
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      justify-content: flex-start
+      padding-left: 20px
+      padding-right: 20px
+      width: 50%
+
+    @media(min-width: 992px)
+      padding-left: 40px
+      padding-right: 40px
+
+    @media(min-width: 1200px)
+      padding-left: 100px
+      padding-right: 50px
+
+  &__text
+    background-color: #90cff2
+    padding: 20px
+
+    @media(min-width: 768px)
+      flex-grow: 1
+      position: relative
+
+    @media(min-width: 1200px)
+      padding-left: 28px
+      padding-right: 28px
+
+    &::after
+      @media(min-width: 768px)
+        background-color: #2583b7
+        content: ''
+        height: 100%
+        left: 0
+        position: absolute
+        top: 0
+        transform: rotate(3.5deg) skew(-18deg)
+        transform-origin: 0 bottom
+        width: 97%
+        z-index: -1
+
+      @media(min-width: 1300px)
+        transform: rotate(3.5deg) skew(-26deg)

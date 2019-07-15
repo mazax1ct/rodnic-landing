@@ -1,0 +1,101 @@
+.section-2
+  background: url('../images/backgrounds/desktop/sea_gradient.png') repeat-y 50% 0 transparent
+  margin-bottom: 80px
+  padding-top: 50px
+  padding-bottom: 100px
+  position: relative
+  text-align: center
+
+  @media(min-width: 1200px)
+    font-size: 24px
+    padding-top: 100px
+    padding-bottom: 50px
+
+  &::before
+    background: url('../images/backgrounds/desktop/wave_top_1_lg.png') no-repeat 50% 0 transparent
+    content: ''
+    height: 450px
+    left: 0
+    position: absolute
+    top: -40px
+    width: 100%
+    z-index: 1
+
+  &::after
+    background: url('../images/backgrounds/desktop/wave_bottom_1_lg.png') no-repeat 50% 0 transparent
+    bottom: -40px
+    content: ''
+    height: 450px
+    left: 0
+    position: absolute
+    top: auto
+    width: 100%
+    z-index: 1
+
+  &__inner
+    overflow: hidden
+
+  .container
+    position: relative
+    z-index: 2
+
+  h2
+    @media(min-width: 1200px)
+      margin-bottom: 35px
+
+
+.important
+  margin-bottom: 50px
+
+  @media(min-width: 768px)
+    position: relative
+    padding-right: 50%
+
+  @media(min-width: 1200px)
+    margin-bottom: 90px
+
+  &:last-child
+    margin-bottom: 0
+
+  &--reverse
+    @media(min-width: 768px)
+      padding-left: 50%
+      padding-right: 0
+
+    .important__image
+      left: -5%
+      right: auto
+
+    .important__text-block
+      @media(min-width: 768px)
+        padding-top: 120px
+        padding-bottom: 120px
+
+      @media(min-width: 992px)
+        padding-top: 230px
+        padding-bottom: 135px
+
+      @media(min-width: 1200px)
+        padding-bottom: 190px
+
+  &__image
+    @media(max-width: 767px)
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 20px
+      max-width: 200px
+
+    @media(min-width: 768px)
+      left: auto
+      position: absolute
+      right: -5%
+      top: 0
+      width: 60%
+
+  &__text-block
+    @media(min-width: 768px)
+      padding-top: 120px
+      padding-bottom: 120px
+
+    @media(min-width: 1200px)
+      padding-bottom: 0
