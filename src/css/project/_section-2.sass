@@ -1,5 +1,5 @@
 .section-2
-  background: url('../images/backgrounds/desktop/sea_gradient.png') repeat-y 50% 0 transparent
+  background-color: #27c6ed
   margin-bottom: 80px
   padding-top: 50px
   padding-bottom: 100px
@@ -11,26 +11,34 @@
     padding-top: 100px
     padding-bottom: 50px
 
-  &::before
-    background: url('../images/backgrounds/desktop/wave_top_1_lg.png') no-repeat 50% 0 transparent
+  &::before,
+  &::after
+    background-size: 100% auto
+    background-color: transparent
+    background-repeat: no-repeat
     content: ''
-    height: 450px
+    height: 470px
     left: 0
     position: absolute
-    top: -40px
     width: 100%
     z-index: 1
 
+    @media(min-width: 1600px)
+      height: 550px
+
+    @media(min-width: 1900px)
+      height: 800px
+
+  &::before
+    background-image: url('../images/backgrounds/desktop/wave_top_2_lg.png')
+    background-position: 50% 0
+    top: -50px
+
   &::after
-    background: url('../images/backgrounds/desktop/wave_bottom_1_lg.png') no-repeat 50% 0 transparent
-    bottom: -40px
-    content: ''
-    height: 450px
-    left: 0
-    position: absolute
+    background-image: url('../images/backgrounds/desktop/wave_bottom_2_lg.png')
+    background-position: 50% 100%
+    bottom: -50px
     top: auto
-    width: 100%
-    z-index: 1
 
   &__inner
     overflow: hidden
